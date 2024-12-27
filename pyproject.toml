@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyrolink"
-version = "1.1.2"  # Replace this with the actual version if dynamically determined
+version = "0.0.1"  # Replace this with the actual version if dynamically determined
 description = "Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots"
 authors = ["venombolteop <venombolteop@gmail.com>"]
 readme = "README.md"
