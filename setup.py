@@ -45,7 +45,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/pyrogram",
     download_url="https://github.com/pyrogram/pyrogram/releases/latest",
-    author="Venom",
+    author="venombolteop",
     author_email="venombolteop@gmail.com",
     license="LGPLv3",
     classifiers=[
