@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/venombolteop/pyrolink">
-        <img src="https://raw.githubusercontent.com/pylogram/artwork/main/artwork/pyrolink-logo.png" alt="Pyrogram" width="128">
+        <img src="https://raw.githubusercontent.com/pylogram/artwork/main/artwork/pyrolink-logo.png" alt="Pyrolink" width="128">
     </a>
     <br>
     <b>Telegram MTProto API Framework for Python</b>
@@ -52,7 +52,7 @@ identity (bot API alternative) using Python.
 - **Ready**: Install Pyrolink with pip and start building your applications right away.
 - **Easy**: Makes the Telegram API simple and intuitive, while still allowing advanced usages.
 - **Elegant**: Low-level details are abstracted and re-presented in a more convenient way.
-- **Fast**: Boosted up by [TgCrypto](https://github.com/venombolteop/telecrypto), a high-performance cryptography library written in C.  
+- **Fast**: Boosted up by [TeleCrypto](https://github.com/venombolteop/telecrypto), a high-performance cryptography library written in C.  
 - **Type-hinted**: Types and methods are all type-hinted, enabling excellent editor support.
 - **Async**: Fully asynchronous (also usable synchronously if wanted, for convenience).
 - **Powerful**: Full access to Telegram's API to execute any official client action and more.
