@@ -14,10 +14,10 @@ python = ">=3.7,<4.0"
 tox = "^4.0.0"  # Replace with specific dependencies from requirements.txt
 
 [tool.poetry.dev-dependencies]
-pytest
-pytest-asyncio
-pytest-cov
-twine
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+twine = "*"
 
 [tool.poetry.scripts]
 pyrolink = "pyrolink.cli:main"  # Adjust the entry point based on your project structure
