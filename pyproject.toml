@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "Pyrolink"
-version = "2.1.1"  # Replace this with the dynamically fetched version if required
+version = "2.1.2"  # Replace this with the dynamically fetched version if required
 description = "Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots"
 readme = "README.md"
 readme-content-type = "text/markdown"
