@@ -1,52 +1,28 @@
-[build-system]
-requires = ["setuptools>=42", "wheel", "setuptools_scm"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "Pyrolink"
-version = "2.1.2"  # Replace this with the dynamically fetched version if required
+[tool.poetry]
+name = "pyrolink"
+version = "1.0.0"  # Replace this with the actual version if dynamically determined
 description = "Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots"
+authors = ["Venom <venombolteop@gmail.com>"]
 readme = "README.md"
-readme-content-type = "text/markdown"
-authors = [{name = "Venom", email = "venombolteop@gmail.com"}]
-license = {file = "LICENSE"}
-keywords = ["telegram", "chat", "messenger", "mtproto", "api", "client", "library", "python"]
-classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "Intended Audience :: Developers",
-    "Natural Language :: English",
-    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: Implementation",
-    "Programming Language :: Python :: Implementation :: CPython",
-    "Programming Language :: Python :: Implementation :: PyPy",
-    "Topic :: Internet",
-    "Topic :: Communications",
-    "Topic :: Communications :: Chat",
-    "Topic :: Software Development :: Libraries",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Software Development :: Libraries :: Application Frameworks",
-]
-requires-python = ">=3.7"
-dependencies = [
-    # Dynamically populate this from requirements.txt if needed
-]
+license = "LGPLv3"
+homepage = "https://github.com/venombolteop"
+repository = "https://github.com/venombolteop/pyrolink"
+documentation = "https://docs.pyrogram.org"
 
-[project.urls]
-Tracker = "https://github.com/pyrogram/pyrogram/issues"
-Community = "https://t.me/pyrogram"
-Source = "https://github.com/pyrogram/pyrogram"
-Documentation = "https://docs.pyrogram.org"
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+tox = "^4.0.0"  # Replace with specific dependencies from requirements.txt
 
-[tool.setuptools.packages.find]
-exclude = ["compiler*", "tests*"]
+[tool.poetry.dev-dependencies]
+pytest
+pytest-asyncio
+pytest-cov
+twine
 
-[tool.setuptools.package-data]
-pyrogram = ["py.typed"]
+[tool.poetry.scripts]
+pyrolink = "pyrolink.cli:main"  # Adjust the entry point based on your project structure
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
