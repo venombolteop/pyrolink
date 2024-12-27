@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Pyrolink"
+version = "2.1.1"  # Replace this with the dynamically fetched version if required
+description = "Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots"
+readme = "README.md"
+readme-content-type = "text/markdown"
+authors = [{name = "Venom", email = "venombolteop@gmail.com"}]
+license = {file = "LICENSE"}
+keywords = ["telegram", "chat", "messenger", "mtproto", "api", "client", "library", "python"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Internet",
+    "Topic :: Communications",
+    "Topic :: Communications :: Chat",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+requires-python = ">=3.7"
+dependencies = [
+    # Dynamically populate this from requirements.txt if needed
+]
+
+[project.urls]
+Tracker = "https://github.com/pyrogram/pyrogram/issues"
+Community = "https://t.me/pyrogram"
+Source = "https://github.com/pyrogram/pyrogram"
+Documentation = "https://docs.pyrogram.org"
+
+[tool.setuptools.packages.find]
+exclude = ["compiler*", "tests*"]
+
+[tool.setuptools.package-data]
+pyrogram = ["py.typed"]
