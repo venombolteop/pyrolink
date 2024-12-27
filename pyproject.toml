@@ -22,7 +22,7 @@ pytest-cov = "*"
 twine = "*"
 
 [tool.poetry.scripts]
-pyrolink = "pyrolink.cli:main"  # Adjust the entry point based on your project structure
+pyrolink = "pyrogram.cli:main"  # Adjust the entry point based on your project structure
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
