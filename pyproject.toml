@@ -10,8 +10,9 @@ repository = "https://github.com/venombolteop/pyrolink"
 documentation = "https://docs.pyrogram.org"
 
 [tool.poetry.dependencies]
-python = ">=3.7,<4.0"
-tox = "^4.0.0"  # Replace with specific dependencies from requirements.txt
+python = ">=3.7,<4.0"  # Replace with specific dependencies from requirements.txt
+pyaes==1.6.1
+pysocks==1.7.1
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
